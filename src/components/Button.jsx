@@ -23,4 +23,6 @@ Button.propTypes = {
   handleClick: PropTypes.func,
 };
 
+//the propType here provide the information to storybookk
+
 export default Button;
