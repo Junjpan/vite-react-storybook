@@ -4,12 +4,11 @@ export default {
   title: "Components/Stack",
   component: "Stack",
   argTypes: {
-    // direction: { control: "select" }, for some reason doesn't show the dropdown menu,
+    direction: { control: "select", options: ["row", "column"] },
     //right now it only provide textarea. by default it's checkbox, it worked on the button component, but not for this one
     numberOfChildren: { type: "number", defaultValue: 4 }, //the defaultValue doesn't look like it's working
   },
 };
-
 // eslint-disable-next-line react/prop-types
 export const Playground = ({ numberOfChildren, ...args }) => (
   <Stack {...args}>
