@@ -20,12 +20,13 @@ export const Red = {
 };
 
 //option 2
-export const Yellow = ({ ...props }) => {
+export const Blue = ({ ...props }) => {
   return <Button {...props} />;
 };
 
-Yellow.args = {
+Blue.args = {
   label: "about me",
-  backgroundColor: "yellow",
+  backgroundColor: "blue",
   size: "lg",
+  color: "white",
 };
