@@ -26,6 +26,6 @@ export const Blue = ({ ...props }) => {
 
 Blue.args = {
   label: "about me",
-  backgroundColor: "yellow",
+  backgroundColor: "skyblue",
   size: "lg",
 };
