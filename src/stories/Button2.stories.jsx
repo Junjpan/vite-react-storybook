@@ -29,4 +29,5 @@ Blue.args = {
   backgroundColor: "blue",
   size: "lg",
   color: "white",
+  borderRadius: 10,
 };

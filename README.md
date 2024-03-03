@@ -36,7 +36,7 @@ npm run storybook
 
 Under .storybook folder, there is preview.js file which allows you to do a global configuration.
 
-deploy storybook in Chromatic
+deploy storybook in Chromatic,
 
 ```
 npm run build-storybook
@@ -44,6 +44,8 @@ npm run build-storybook
 npm run chromatic
 
 ```
+
+`npm run build-storybook` will create a storybook-static folder.
 
 sign in to the chromatic, connect to your Github, and select your storybook project. after connecting to your project, it’ll provide you with the chromatic script that you can build your storybook inside the Chromatic, the script like `npm run  chromatic --project-token=<project-token>`, after you run this command, will create a storybook inside the chromatic, and it also provides you a link https://random-uuid.chromatic.com to your published Storybook. Share the link with your team to get feedback
 

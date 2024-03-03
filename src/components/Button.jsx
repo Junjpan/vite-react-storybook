@@ -6,6 +6,7 @@ function Button({
   size = "md",
   handleClick,
   color = "black",
+  borderRadius = 10,
 }) {
   let scale = 1;
   if (size === "sm") scale = 0.75;
@@ -15,6 +16,7 @@ function Button({
     padding: `${scale * 0.5}rem ${scale * 1}rem`,
     border: "none",
     color,
+    borderRadius: `${borderRadius}px`,
   };
   return (
     <button onClick={handleClick} style={style}>
@@ -29,6 +31,7 @@ Button.propTypes = {
   size: PropTypes.oneOf(["sm", "md", "lg"]),
   handleClick: PropTypes.func,
   color: PropTypes.oneOf(["black", "white"]),
+  borderRadius: PropTypes.number,
 };
 
 //the propType here provide the information to storybookk
